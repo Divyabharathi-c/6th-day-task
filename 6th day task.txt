@@ -1,0 +1,70 @@
+1]
+
+class movie{
+  constructor(title,studio,rating){
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+  }
+  
+    getpg(){
+      return "MOVIE"+" "+ this.title+" "+"STUDIO"+" "+ this.studio+" "+"RATING"+" "+ this.rating+" "+ "REPRESENTED";
+    }
+}
+var c1 = new movie("CASINO ROYALE","EON PRODUCTIONS","PG13");
+console.log(c1.getpg());
+
+2]
+
+class Circle{
+  constructor(radius,color){
+    this.radius = radius;
+    this.color = color;
+    
+  }
+  
+    getarea(){
+      return "circle radius"+" *"+ this.radius+" , "+"circle color"+" "+"*"+ this.color+" "+"color";
+  }
+}
+var c1 = new Circle("1.0","red");
+console.log(c1.getarea());
+
+3]
+
+class Person{
+  constructor(name,gender,city,state,portal){
+    this.name = name;
+    this.gender = gender;
+    this.city = city;
+    this.state = state;
+    this.portal = portal;
+    
+  }
+}
+var c1 = new Person("DIVYA","FEMALE","MARASANDRA","KARNADAKA","ZEN");
+console.log(c1.name);
+console.log(c1.gender);
+console.log(c1.city);
+console.log(c1.state);
+console.log(c1.portal);
+
+4]
+
+function kmph_to_mps(kmph)
+{
+    return (0.277778 * kmph);
+}
+
+function mps_to_kmph(mps)
+{
+    return (3.6 * mps) ;
+}
+ var kmph = 72.0
+        
+
+var mps = 10.0
+        
+document.write("speed_in_mps = " + Number(kmph_to_mps(kmph).toFixed(0)) +
+    " speed_in_kmph = " + Number(mps_to_kmph(mps).toFixed(0)))
+    console.log(document.write);
